@@ -19,8 +19,8 @@ app.post('/send-email', (req, res) => {
         host: 'smtp-relay.sendinblue.com',  // Brevo SMTP server address
         port: 587,  // Standard port for SMTP
         auth: {
-            user: 'ptitarara@gmail.com',  // Replace with your Brevo email
-            pass: 'xsmtpsib-cbd1f391af24fa9f4dc115c3a33dee9320e2628c803e96cc817a551762ad1192-3XW8J1Ob0jZtARgh'            // Replace with your Brevo SMTP key
+            user: '',  // Replace with your Brevo email
+            pass: ''            // Replace with your Brevo SMTP key
         }
     });
 
