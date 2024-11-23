@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Luxury Front Page</title>
+    <link rel="stylesheet" href="/AmgHome/amg.css">
+    <!-- Add Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#Home">
+            <img src="logo.png" alt="Mercedes-AMG Logo" class="logo">
+        </a>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video" id="hero-video">
+            <source src="/AmgHome/amg/Amg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Performance Redefined</h1>
+            <p>The Mercedes-AMG lineup represents the pinnacle of automotive engineering, blending luxury, speed, and unparalleled precision on the road.</p>
+        </div>
+
+        <!-- Audio Toggle Button with Icons -->
+        <button id="audio-toggle" class="audio-toggle-btn">
+            <i id="audio-icon" class="fas fa-volume-mute"></i> <!-- Default to unmute icon -->
+        </button>
+    </section>
+    
+
+    <!-- Photo 1 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/AmgHome/amg/amg1.webp" alt="Mercedes-AMG Iconic Design">
+        <div class="photo-content">
+            <h2>Iconic Design</h2>
+            <p>The Mercedes-AMG car is built to turn heads, with an aggressive stance and aerodynamic design that speaks volumes about its racing heritage and luxury.</p>
+        </div>
+    </section>
+
+    <!-- Photo 2 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/AmgHome/amg/amg2.webp" alt="Mercedes-AMG Performance">
+        <div class="photo-content">
+            <h2>Unmatched Performance</h2>
+            <p>Every Mercedes-AMG vehicle is engineered to deliver an extraordinary driving experience, offering both explosive power and precise handling.</p>
+        </div>
+    </section>
+
+    <!-- Last Photo Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/AmgHome/amg/amg3.jpg" alt="Mercedes-AMG Powerful Engine">
+        <div class="photo-content">
+            <h2>Powerful Engine</h2>
+            <p>The heart of every Mercedes-AMG is its performance engine, engineered for maximum output and thrill, providing an unrivaled driving experience.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Advanced Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Performance Safety</h3>
+                <p>With advanced safety technologies like Active Brake Assist, Blind Spot Assist, and lane-keeping systems, every Mercedes-AMG model ensures you are always in control.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Luxury Interior</h3>
+                <p>From premium leather upholstery to handcrafted details, every Mercedes-AMG vehicle offers the most luxurious and comfortable driving experience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Infotainment System</h3>
+                <p>Equipped with the latest MBUX system, Apple CarPlay, Android Auto, and voice commands, your Mercedes-AMG offers seamless connectivity and an intuitive driving experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications fade-in">
+        <h2>Performance Specifications</h2>
+        <table>
+            <tr>
+                <th>Engine</th>
+                <td>4.0L V8 Biturbo</td>
+            </tr>
+            <tr>
+                <th>Horsepower</th>
+                <td>503 HP</td>
+            </tr>
+            <tr>
+                <th>Torque</th>
+                <td>479 lb-ft</td>
+            </tr>
+            <tr>
+                <th>0-60 MPH</th>
+                <td>3.1 seconds</td>
+            </tr>
+            <tr>
+                <th>Top Speed</th>
+                <td>155 MPH</td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="fade-in">What Our Customers Say</h2>
+        <div class="testimonial-item fade-in">
+            <p>"Driving a Mercedes-AMG is a whole new level of excitement. The acceleration, handling, and sound are incredible!"</p>
+            <p><strong>- Sarah P.</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"The power of the engine and the luxury of the interior make every ride in the Mercedes-AMG unforgettable."</p>
+            <p><strong>- Carlos M.</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"There’s nothing like the performance and craftsmanship of a Mercedes-AMG. It’s simply a masterpiece on wheels."</p>
+            <p><strong>- Claire W.</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Mercedes-AMG. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/AmgHome/amg.js"></script>
+    <script>
+        // JavaScript for Audio Toggle
+        const video = document.getElementById('hero-video');
+        const audioToggleButton = document.getElementById('audio-toggle');
+        const audioIcon = document.getElementById('audio-icon');
+
+        audioToggleButton.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                audioIcon.classList.replace('fa-volume-mute', 'fa-volume-up'); // Switch to unmute icon
+            } else {
+                video.muted = true;
+                audioIcon.classList.replace('fa-volume-up', 'fa-volume-mute'); // Switch to mute icon
+            }
+        });
+    </script>
+</body>
+</html>

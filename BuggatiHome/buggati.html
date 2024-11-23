@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bugatti Front Page</title>
+        <link rel="stylesheet" href="/BuggatiHome/buggati.css">
+        <!-- Add Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+<body>
+    <header class="navbar">
+        <a href="#Home">
+            <img src="logo.png" alt="Bugatti Logo" class="logo">
+        </a>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video" id="hero-video">
+            <source src="/BuggatiHome/Buggati/Buggati.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Bugatti Turbillion</h1>
+            <p>An unparalleled masterpiece of engineering and design, the Turbillion redefines what it means to be a hypercar. Born to rule the road, it exudes power, speed, and elegance.</p>
+        </div>
+        <!-- Audio Toggle Button with Icons -->
+        <button id="audio-toggle" class="audio-toggle-btn">
+            <i id="audio-icon" class="fas fa-volume-mute"></i> <!-- Default to mute icon -->
+        </button>
+    </section>
+    
+    <!-- Photo 1 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/BuggatiHome/Buggati/buggati1.jpg" alt="Bugatti Design">
+        <div class="photo-content">
+            <h2>Iconic Design</h2>
+            <p>The Bugatti Turbillion showcases a bold yet refined silhouette, blending aerodynamic precision with unmistakable elegance.</p>
+        </div>
+    </section>
+
+    <!-- Photo 2 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/BuggatiHome/Buggati/buggati2.avif" alt="Bugatti Performance">
+        <div class="photo-content">
+            <h2>Unmatched Performance</h2>
+            <p>Powered by a quad-turbocharged W16 engine, the Turbillion delivers blistering acceleration, superior control, and unrivaled driving dynamics.</p>
+        </div>
+    </section>
+
+    <!-- Last Photo Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/BuggatiHome/Buggati/Buggati3.avif" alt="Bugatti Interior">
+        <div class="photo-content">
+            <h2>Luxury Beyond Compare</h2>
+            <p>Step inside to experience a world of bespoke craftsmanship, cutting-edge technology, and unparalleled comfort tailored to perfection.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Advanced Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Innovative Aerodynamics</h3>
+                <p>Advanced active aerodynamics and lightweight materials deliver supreme agility and stability at any speed.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Futuristic Technology</h3>
+                <p>Equipped with a next-generation digital cockpit and state-of-the-art driver assistance systems for an intuitive experience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Signature Sound</h3>
+                <p>The powerful growl of the W16 engine embodies the soul of speed and precision, thrilling drivers and onlookers alike.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Eco-Driving Mode</h3>
+                <p>Advanced energy optimization ensures maximum efficiency without compromising the Turbillion's iconic performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications fade-in">
+        <h2>Performance Specifications</h2>
+        <table>
+            <tr>
+                <th>Engine</th>
+                <td>Quad-Turbocharged 8.0L W16</td>
+            </tr>
+            <tr>
+                <th>Horsepower</th>
+                <td>1,600 HP</td>
+            </tr>
+            <tr>
+                <th>Torque</th>
+                <td>1,180 lb-ft</td>
+            </tr>
+            <tr>
+                <th>0-60 MPH</th>
+                <td>2.4 seconds</td>
+            </tr>
+            <tr>
+                <th>Top Speed</th>
+                <td>261 MPH</td>
+            </tr>
+            <tr>
+                <th>Fuel Efficiency</th>
+                <td>9 MPG (combined)</td>
+            </tr>
+            <tr>
+                <th>Transmission</th>
+                <td>7-speed Dual-Clutch</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="fade-in">What Our Customers Say</h2>
+        <div class="testimonial-item fade-in">
+            <p>"The Turbillion is an engineering marvel. Every drive feels like a celebration of speed, precision, and unparalleled luxury."</p>
+            <p><strong>- James H., Luxury Car Collector</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"Driving the Turbillion is a once-in-a-lifetime experience. It combines breathtaking design with mind-blowing performance."</p>
+            <p><strong>- Sophia L., Auto Enthusiast</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"This car is an icon. The Turbillion's relentless power and impeccable design make it the pinnacle of automotive excellence."</p>
+            <p><strong>- Marcus V., Professional Driver</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"Owning a Bugatti Turbillion is more than owning a car. It's a testament to artistry, innovation, and passion."</p>
+            <p><strong>- Olivia P., Bugatti Owner</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Bugatti Automobiles. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/BuggatiHome/buggati.js"></script>
+    <script>
+        // JavaScript for Audio Toggle
+        const video = document.getElementById('hero-video');
+        const audioToggleButton = document.getElementById('audio-toggle');
+
+        audioToggleButton.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                document.getElementById('audio-icon').className = 'fas fa-volume-up';
+            } else {
+                video.muted = true;
+                document.getElementById('audio-icon').className = 'fas fa-volume-mute';
+            }
+        });
+    </script>
+</body>
+</html>

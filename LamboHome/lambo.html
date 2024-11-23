@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lamborghini Front Page</title>
+        <link rel="stylesheet" href="/LamboHome/lambo.css">
+        <!-- Add Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+<body>
+    <header class="navbar">
+        <a href="#Home">
+            <img src="logo.png" alt="Lamborghini Logo" class="logo">
+        </a>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video" id="hero-video">
+            <source src="/LamboHome/Lambo/Lambo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Lamborghini Aventador</h1>
+            <p>The pinnacle of Italian supercar engineering, combining breathtaking design, relentless power, and cutting-edge technology. Dare to dream, and drive beyond limits.</p>
+        </div>
+        <!-- Audio Toggle Button with Icons -->
+        <button id="audio-toggle" class="audio-toggle-btn">
+            <i id="audio-icon" class="fas fa-volume-mute"></i> <!-- Default to mute icon -->
+        </button>
+    </section>
+    
+    <!-- Photo 1 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/LamboHome/Lambo/lam3.jpg" alt="Lamborghini Design">
+        <div class="photo-content">
+            <h2>Iconic Design</h2>
+            <p>The Lamborghini Aventador is a masterpiece of form and function, boasting sharp lines, aerodynamic prowess, and a commanding presence that turns every head.</p>
+        </div>
+    </section>
+
+    <!-- Photo 2 Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/LamboHome/Lambo/lam2.png" alt="Lamborghini Performance">
+        <div class="photo-content">
+            <h2>Unmatched Performance</h2>
+            <p>With a naturally aspirated V12 engine, the Aventador delivers explosive acceleration, precise handling, and a driving experience that redefines exhilaration.</p>
+        </div>
+    </section>
+
+    <!-- Last Photo Section -->
+    <section class="photo">
+        <div class="photo-overlay"></div>
+        <img src="/LamboHome/Lambo/lam1.jpg" alt="Lamborghini Interior">
+        <div class="photo-content">
+            <h2>Luxury Redefined</h2>
+            <p>Step inside the Aventador to discover a world of unparalleled luxury, featuring hand-stitched leather, customizable interiors, and state-of-the-art technology.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Advanced Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Innovative Aerodynamics</h3>
+                <p>Active aerodynamics and lightweight carbon-fiber construction ensure supreme stability and performance at any speed.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Futuristic Technology</h3>
+                <p>Equipped with a digital cockpit, advanced driving modes, and Lamborghini Dinamica Veicolo Attiva (LDVA) system for dynamic handling.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Signature Sound</h3>
+                <p>The signature roar of the V12 engine is music to the ears of car enthusiasts worldwide, representing raw power and unmatched refinement.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Eco-Driving Mode</h3>
+                <p>An advanced cylinder deactivation system optimizes performance and efficiency, making the Aventador as smart as it is powerful.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications fade-in">
+        <h2>Performance Specifications</h2>
+        <table>
+            <tr>
+                <th>Engine</th>
+                <td>Naturally Aspirated 6.5L V12</td>
+            </tr>
+            <tr>
+                <th>Horsepower</th>
+                <td>770 HP</td>
+            </tr>
+            <tr>
+                <th>Torque</th>
+                <td>531 lb-ft</td>
+            </tr>
+            <tr>
+                <th>0-60 MPH</th>
+                <td>2.8 seconds</td>
+            </tr>
+            <tr>
+                <th>Top Speed</th>
+                <td>217 MPH</td>
+            </tr>
+            <tr>
+                <th>Fuel Efficiency</th>
+                <td>13 MPG (combined)</td>
+            </tr>
+            <tr>
+                <th>Transmission</th>
+                <td>7-speed ISR (Independent Shifting Rods)</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="fade-in">What Our Customers Say</h2>
+        <div class="testimonial-item fade-in">
+            <p>"Driving the Aventador is like piloting a jet on wheels. It's pure adrenaline, with every detail meticulously crafted to perfection."</p>
+            <p><strong>- James H., Luxury Car Collector</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"The Aventador is more than a car; it's a lifestyle. From the iconic scissor doors to the unmatched power, it defines automotive excellence."</p>
+            <p><strong>- Sophia L., Auto Enthusiast</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"I've driven many supercars, but the Aventador stands alone. It's a symphony of power, beauty, and innovation that leaves everyone in awe."</p>
+            <p><strong>- Marcus V., Professional Driver</strong></p>
+        </div>
+        <div class="testimonial-item fade-in">
+            <p>"Owning a Lamborghini is a dream come true, and the Aventador exceeds every expectation. It's the ultimate expression of passion and performance."</p>
+            <p><strong>- Olivia P., Lamborghini Owner</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Lamborghini Automobili. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/LamboHome/lambo.js"></script>
+    <script>
+        // JavaScript for Audio Toggle
+        const video = document.getElementById('hero-video');
+        const audioToggleButton = document.getElementById('audio-toggle');
+
+        audioToggleButton.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                document.getElementById('audio-icon').className = 'fas fa-volume-up';
+            } else {
+                video.muted = true;
+                document.getElementById('audio-icon').className = 'fas fa-volume-mute';
+            }
+        });
+    </script>
+</body>
+</html>

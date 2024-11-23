@@ -1,0 +1,317 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Full Page Background Video */
+#background-video {
+    position: fixed; /* Fix the video in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video fill the width of the page */
+    height: 100vh; /* Make the video fill the full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire screen */
+    z-index: -1; /* Place the video behind all other content */
+    filter: brightness(50%); /* Dim the video */
+}
+
+/* Header */
+.header {
+    position: absolute; /* Make it sit on top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* Transparent background */
+    display: flex;
+    justify-content: space-between; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px 0; /* Adjust padding for spacing */
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Logo image inside the header */
+.header .logo {
+    display: block;
+    width: 180px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Menu Icon */
+.option-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.wheel {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Create a circle */
+    background-color: #fff; /* White color for the wheel */
+    border: 5px solid #333; /* Dark outer rim */
+    position: absolute;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, #FF5C00 1px, transparent 1px);
+    background-size: 6px 6px;
+    background-position: center;
+}
+
+/* Full Page Menu */
+.full-page-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Full black background */
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.full-page-menu.open {
+    display: flex;
+    opacity: 1;
+}
+
+/* Menu Options */
+.menu-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Reduced gap between options */
+    width: 100%;
+}
+
+/* Menu Options */
+.menu-option {
+    font-size: 2.5rem; /* Smaller font size */
+    font-weight: bold;
+    color: #fff; /* White text */
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--animation-index));
+}
+
+.menu-option:nth-child(2n) {
+    transform: translateX(100%);
+    animation: slideInFromRight 1s ease forwards;
+    animation-delay: calc(0.2s * var(--animation-index));
+}
+
+
+
+
+.menu-option:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.menu-option:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.menu-option:nth-child(3) {
+    animation-delay: 0.8s;
+}
+.menu-option:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+/* Keyframes for sliding animations */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.close-button:hover {
+    color: #FF5C00; /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg'); /* Replace with a luxury car image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Custom Cursor Styles */
+* {
+    cursor: none; /* Hide the default cursor */
+}
+
+/* Custom Cursor Styles */
+/* Custom Cursor Styles */
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6600; /* Neon orange color */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out, background-color 0.2s ease, width 0.3s ease, height 0.3s ease;
+    z-index: 9999;
+}
+
+#f  {
+    color: red;
+    font-size: 20px;
+}
+#g{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+a:hover, button:hover, .cta-button:hover {
+    cursor: none; /* Hide default pointer */
+}
+
+a:hover .cursor, button:hover .cursor, .cta-button:hover .cursor{
+    background-color: #ffffff; /* Change to white on hover */
+    width: 30px;
+    height: 30px;
+}
+
+/* About Section */
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh; /* Full screen height */
+    padding: 50px 20px;
+    opacity: 0;
+    transform: translateY(20%); /* Hidden initially below the viewport */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When the About section becomes visible */
+.about.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+}
+
+
+
+.about-content{
+    justify-items: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+}
+
+.footer a {
+    color: #FF5C00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* Hero Section Adjustments */
+.hero {
+    z-index: 1;
+    position: relative; /* Ensure it is above the background */
+}
+
+/* Rotating Image Container */
+.rotating-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rotating-image {
+    width: 100px;
+    height: auto;
+    animation: rotate 5s linear infinite;
+}
+
+/* Rotation Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
