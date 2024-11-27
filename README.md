@@ -1,3 +1,3 @@
-"# Hack1" 
-"# Hack1" 
-# Hack1
+# First Hackathon 
+# we Build a Bussiness Showcase Site 
+# Team members: Yash Suthar -- Shuvam Pal -- Aochuba -- Shivansh Sinha
